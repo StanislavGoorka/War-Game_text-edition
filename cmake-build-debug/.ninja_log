@@ -1,0 +1,9 @@
+# ninja log v5
+3	515	7488003455176318	CMakeFiles/War_Game_text_edition.dir/main.cpp.obj	454ee3c4b134d9fd
+7	336	7488009284646451	CMakeFiles/War_Game_text_edition.dir/Card.cpp.obj	636a34e0ba27f55d
+515	618	7488003456192082	War_Game_text_edition.exe	c8ecf759c68da4dd
+7	447	7488016673665771	CMakeFiles/War_Game_text_edition.dir/Deck.cpp.obj	23ad12259069b3d1
+1	86	7488017403279355	build.ninja	876347c8209e93eb
+5	395	7488017407392357	CMakeFiles/War_Game_text_edition.dir/main.cpp.obj	454ee3c4b134d9fd
+3	454	7488017407976375	CMakeFiles/War_Game_text_edition.dir/Deck.cpp.obj	958592545e811d4
+454	678	7488017410195540	War_Game_text_edition.exe	8397bd0b06998e44

@@ -2,42 +2,9 @@
 #include <vector>
 
 #include "Card.h"
+#include "Deck.h"
 
 using namespace std;
-
-
-
-
-class Deck
-{
-private:
-    vector<Card> deck;
-
-public:
-    vector<Card> create_deck()
-    {
-        vector<Card> deck;
-        vector<string> colors = {"diamond", "heart", "spade", "club"};
-        vector<unsigned short int> values;
-
-        for(unsigned short int i = 2; i <= 14; i++) {values.push_back(i);}
-
-        for (auto i : values)
-        {
-            for (auto j : colors)
-            {
-                deck.push_back(Card(i, j));
-            }
-        }
-
-        return deck;
-    }
-
-    vector<Card> get_deck() { return deck; }
-
-
-    Deck() { deck = create_deck(); }
-};
 
 
 int main()
