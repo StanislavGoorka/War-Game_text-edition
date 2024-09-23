@@ -3,4 +3,6 @@ project(War_Game_text_edition)
 
 set(CMAKE_CXX_STANDARD 23)
 
-add_executable(War_Game_text_edition main.cpp)
+add_executable(War_Game_text_edition main.cpp
+        Card.cpp
+        Card.h)

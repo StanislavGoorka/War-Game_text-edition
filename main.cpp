@@ -1,23 +1,12 @@
 #include <iostream>
-#include <string>
 #include <vector>
+
+#include "Card.h"
 
 using namespace std;
 
 
-class Card
-{
-private:
-    unsigned short int value;
-    string color;
 
-public:
-    Card(unsigned short int VALUE, string COLOR) :
-            value(VALUE), color(COLOR){};
-
-    unsigned short int get_value() { return value; };
-    string get_color() { return color; };
-};
 
 class Deck
 {
