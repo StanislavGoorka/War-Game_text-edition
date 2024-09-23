@@ -1,0 +1,3 @@
+C:/Users/metre/CLionProjects/War-Game_text-edition/cmake-build-debug/CMakeFiles/War_Game_text_edition.dir
+C:/Users/metre/CLionProjects/War-Game_text-edition/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/metre/CLionProjects/War-Game_text-edition/cmake-build-debug/CMakeFiles/rebuild_cache.dir
