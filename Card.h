@@ -17,6 +17,16 @@ class Card {
 
         unsigned short int get_value();
         std::string get_color();
+
+//        bool operator == (const Card &target) {
+//            if (value == target.value && color == target.color) { return true; }
+//            else { return false; }
+//        }
+//
+//        bool operator != (const Card &target) {
+//            if (value == target.value && color == target.color) { return false; }
+//            else { return true; }
+//        }
 };
 
 

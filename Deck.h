@@ -6,6 +6,8 @@
 #define DECK_H
 
 #include <vector>
+#include <algorithm>
+#include <random>
 #include "Card.h"
 
 class Deck
@@ -18,6 +20,8 @@ public:
 
     std::vector<Card> create_deck();
     std::vector<Card> get_deck();
+    std::vector<Card>* get_deck_instance();
+    void shuffle_deck(Deck &target);
 };
 
 

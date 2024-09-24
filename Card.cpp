@@ -10,4 +10,3 @@ value(VALUE), color(COLOR) {};
 
 unsigned short int Card::get_value() { return value; }
 std::string Card::get_color() { return color; }
-
