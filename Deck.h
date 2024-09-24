@@ -22,6 +22,8 @@ public:
     std::vector<Card> get_deck();
     std::vector<Card>* get_deck_instance();
     void shuffle_deck(Deck &target);
+    Card draw_card();
+
 };
 
 
