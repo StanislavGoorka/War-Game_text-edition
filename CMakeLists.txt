@@ -7,4 +7,6 @@ add_executable(War_Game_text_edition main.cpp
         Card.cpp
         Card.h
         Deck.cpp
-        Deck.h)
+        Deck.h
+        Player.cpp
+        Player.h)

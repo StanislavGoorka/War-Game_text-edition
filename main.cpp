@@ -9,11 +9,13 @@ using namespace std;
 int main()
 {
     Deck obj;
+    Deck obj_test;
 
+    for (unsigned short int i = 0; i < obj.get_deck().size(); i++) {
+        Card current_obj_card = obj.get_deck().at(i);
+        Card current_obj_test_card = obj_test.get_deck().at(i);
 
-    for (auto k : obj.get_deck())
-    {
-        cout << k.get_value() << " " << k.get_color() << endl;
+        cout << current_obj_card.get_value() << " " << current_obj_card.get_color() << "            " << current_obj_test_card.get_value() << " " << current_obj_test_card.get_color() << endl;
     }
 
 
