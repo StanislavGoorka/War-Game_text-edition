@@ -24,13 +24,13 @@ std::vector<Card> Deck::get_deck() { return deck; }
 std::vector<Card>* Deck::get_deck_instance() { return &deck; }
 
 void Deck::shuffle_deck(Deck &target) {
-//    std::vector<Card>* current_deck;
-//    current_deck = target.get_deck_instance();
-//
-//    auto rd = std::random_device {};
-//    auto rng = std::default_random_engine { rd() };
-//
-//    std::shuffle(current_deck->begin(), current_deck->end(), rng);
+    std::vector<Card>* current_deck;
+    current_deck = target.get_deck_instance();
+
+    auto rd = std::random_device {};
+    auto rng = std::default_random_engine { rd() };
+
+    std::shuffle(current_deck->begin(), current_deck->end(), rng);
 }
 
 Card Deck::draw_card() {
