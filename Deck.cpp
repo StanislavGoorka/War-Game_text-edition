@@ -33,13 +33,13 @@ void Deck::shuffle_deck(Deck &target) {
     std::shuffle(current_deck->begin(), current_deck->end(), rng);
 }
 
-Card Deck::draw_card() {
-    std::vector<Card>* target_deck = this->get_deck_instance();
-    Card card = target_deck->at(0);
-    target_deck->erase(target_deck->begin());
-
-    return card;
-}
+//Card Deck::draw_card() {
+//    std::vector<Card>* target_deck = this->get_deck_instance();
+//    Card card = target_deck->at(0);
+//    target_deck->erase(target_deck->begin());
+//
+//    return card;
+//}
 
 Deck::Deck()
 : deck(create_deck()) {

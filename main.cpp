@@ -1,23 +1,26 @@
 #include <iostream>
 
 #include "Card.h"
-#include "Deck.h"
+#include "Player.h"
 
 using namespace std;
 
 
 int main()
 {
-    Deck obj;
-    for (int i = 1; i <= 15; i++) {
-        Card selected_card = obj.draw_card();
-        cout << selected_card.get_value() << " " << selected_card.get_color() << endl;
-    }
+    Player obj;
 
-    cout << endl << endl << endl;
+    for (auto item : *obj.get_players_deck()->get_deck_instance())
+        cout << item.get_value() << " " << item.get_color() << endl;
 
-    for (auto i : *obj.get_deck_instance())
-        cout << i.get_value() << " " << i.get_color() << endl;
+
+    cout << endl << endl << endl << endl;
+
+    Card drawn_card = obj.draw_card();
+    cout << drawn_card.get_value() << " " << drawn_card.get_color() << endl << endl << endl << endl;
+
+    for (auto item : *obj.get_players_deck()->get_deck_instance())
+        cout << item.get_value() << " " << item.get_color() << endl;
 
 
     return 0;

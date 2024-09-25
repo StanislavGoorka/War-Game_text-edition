@@ -9,10 +9,14 @@
 
 class Player {
 private:
-    Deck deck;
+    Deck players_deck;
 
 public:
     Player();
+
+    Deck* get_players_deck() { return &players_deck; }
+
+    Card draw_card();
 };
 
 
