@@ -34,8 +34,9 @@ void Deck::shuffle_deck(Deck &target) {
 }
 
 Card Deck::draw_card() {
-    Card card = this->get_deck_instance()->at(0);
-    this->get_deck_instance()->erase(this->get_deck_instance()->begin());
+    std::vector<Card>* target_deck = this->get_deck_instance();
+    Card card = target_deck->at(0);
+    target_deck->erase(target_deck->begin());
 
     return card;
 }
