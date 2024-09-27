@@ -5,8 +5,8 @@ set(CMAKE_CXX_STANDARD 23)
 
 add_executable(War_Game_text_edition main.cpp
         Card.cpp
-        Card.h
-        Deck.cpp
-        Deck.h
+        Card.hpp
+        DeckManager.cpp
+        DeckManager.hpp
         Player.cpp
-        Player.h)
+        Player.hpp)

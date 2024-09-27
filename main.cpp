@@ -1,7 +1,7 @@
 #include <iostream>
 
-#include "Card.h"
-#include "Player.h"
+#include "Card.hpp"
+#include "Player.hpp"
 
 using namespace std;
 

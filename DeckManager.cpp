@@ -2,11 +2,11 @@
 // Created by metre on 23.09.2024.
 //
 
-#include "Deck.h"
+#include "DeckManager.hpp"
 
 
 std::vector<Card> Deck::create_deck() {
-    std::vector<Card> deck;
+    std::vector<Card> temp_deck;
     std::vector<std::string> colors = {"diamond", "heart", "spade", "club"};
     std::vector<unsigned short int> values;
 
@@ -14,18 +14,19 @@ std::vector<Card> Deck::create_deck() {
 
     for (auto i: values)
         for (const auto &j: colors)
-            deck.emplace_back(i, j);
+            temp_deck.emplace_back(i, j);
 
 
-    return deck;
+    return temp_deck;
+
 }
 
 std::vector<Card> Deck::get_deck() { return deck; }
 std::vector<Card>* Deck::get_deck_instance() { return &deck; }
 
-void Deck::shuffle_deck(Deck &target) {
+void Deck::shuffle_deck() {
     std::vector<Card>* current_deck;
-    current_deck = target.get_deck_instance();
+    current_deck = this->get_deck_instance();
 
     auto rd = std::random_device {};
     auto rng = std::default_random_engine { rd() };
@@ -33,17 +34,8 @@ void Deck::shuffle_deck(Deck &target) {
     std::shuffle(current_deck->begin(), current_deck->end(), rng);
 }
 
-//Card Deck::draw_card() {
-//    std::vector<Card>* target_deck = this->get_deck_instance();
-//    Card card = target_deck->at(0);
-//    target_deck->erase(target_deck->begin());
-//
-//    return card;
-//}
-
 Deck::Deck()
 : deck(create_deck()) {
-    for (unsigned short int i = 1; i <= 5; i++) {
-        shuffle_deck(*this);
-    }
+    for (unsigned short int i = 1; i <= 5; i++)
+        shuffle_deck();
 }

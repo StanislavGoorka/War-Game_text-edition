@@ -2,13 +2,12 @@
 // Created by metre on 23.09.2024.
 //
 
-#ifndef DECK_H
-#define DECK_H
+#pragma once
 
 #include <vector>
 #include <algorithm>
 #include <random>
-#include "Card.h"
+#include "Card.hpp"
 
 class Deck
 {
@@ -21,10 +20,6 @@ public:
     std::vector<Card> create_deck();
     std::vector<Card> get_deck();
     std::vector<Card>* get_deck_instance();
-    void shuffle_deck(Deck &target);
+    void shuffle_deck();
 
 };
-
-
-
-#endif //DECK_H

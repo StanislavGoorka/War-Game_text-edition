@@ -1,7 +1,7 @@
 //
 // Created by metre on 23.09.2024.
 //
-#include "Card.h"
+#include "Card.hpp"
 
 
 Card::Card(unsigned short int VALUE, std::string COLOR) :

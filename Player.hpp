@@ -2,10 +2,9 @@
 // Created by metre on 24.09.2024.
 //
 
-#ifndef PLAYER_H
-#define PLAYER_H
+#pragma once
 
-#include "Deck.h"
+#include "DeckManager.hpp"
 
 class Player {
 private:
@@ -18,6 +17,3 @@ public:
 
     Card draw_card();
 };
-
-
-#endif //PLAYER_H
