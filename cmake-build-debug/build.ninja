@@ -73,6 +73,12 @@ build CMakeFiles/War_Game_text_edition.dir/Player.cpp.obj: CXX_COMPILER__War_Gam
   OBJECT_DIR = CMakeFiles\War_Game_text_edition.dir
   OBJECT_FILE_DIR = CMakeFiles\War_Game_text_edition.dir
 
+build CMakeFiles/War_Game_text_edition.dir/GameMode.cpp.obj: CXX_COMPILER__War_Game_text_edition_unscanned_Debug C$:/Users/metre/CLionProjects/War-Game_text-edition/GameMode.cpp || cmake_object_order_depends_target_War_Game_text_edition
+  DEP_FILE = CMakeFiles\War_Game_text_edition.dir\GameMode.cpp.obj.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\War_Game_text_edition.dir
+  OBJECT_FILE_DIR = CMakeFiles\War_Game_text_edition.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target War_Game_text_edition
@@ -81,7 +87,7 @@ build CMakeFiles/War_Game_text_edition.dir/Player.cpp.obj: CXX_COMPILER__War_Gam
 #############################################
 # Link the executable War_Game_text_edition.exe
 
-build War_Game_text_edition.exe: CXX_EXECUTABLE_LINKER__War_Game_text_edition_Debug CMakeFiles/War_Game_text_edition.dir/main.cpp.obj CMakeFiles/War_Game_text_edition.dir/Card.cpp.obj CMakeFiles/War_Game_text_edition.dir/DeckManager.cpp.obj CMakeFiles/War_Game_text_edition.dir/Player.cpp.obj
+build War_Game_text_edition.exe: CXX_EXECUTABLE_LINKER__War_Game_text_edition_Debug CMakeFiles/War_Game_text_edition.dir/main.cpp.obj CMakeFiles/War_Game_text_edition.dir/Card.cpp.obj CMakeFiles/War_Game_text_edition.dir/DeckManager.cpp.obj CMakeFiles/War_Game_text_edition.dir/Player.cpp.obj CMakeFiles/War_Game_text_edition.dir/GameMode.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\War_Game_text_edition.dir

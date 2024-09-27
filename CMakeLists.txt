@@ -9,4 +9,7 @@ add_executable(War_Game_text_edition main.cpp
         DeckManager.cpp
         DeckManager.hpp
         Player.cpp
-        Player.hpp)
+        Player.hpp
+        GameMode.cpp
+        GameMode.hpp
+        GameMode.hpp)
